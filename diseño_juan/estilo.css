@@ -1,6 +1,6 @@
 /* Cabecera */
 .titulo-cabecera{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -18,23 +18,38 @@ section{
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-color: aqua;
-    border: 2px solid black;
+ 
   }
 
   .logo-acueducto{
-    width: 10rem;
+    width: 7rem;
   }
 
+  /* Barra de Navegacio */
+  .navbar{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: aqua;
+  }
+  .buscador{
+    display: flex;
+   
+    padding: 5px;
+    background-color: blue;
+  }
+
+
+
   @media screen and (max-width: 767px){
-   .logo {
+   .btn {
     display: none;
    }
-  }
+  }  
 
   @media screen and (max-width: 767px){
     .titulo-cabecera{
-        font-size: 1rem;
+        font-size: 0.7rem;
         text-align: center;
     }
   }
