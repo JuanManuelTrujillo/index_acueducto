@@ -1,7 +1,20 @@
 /* Cabecera */
+body{
+  background-color: #E6EFFD;
+}
+.cabecera{
+  background-color: white;
+}
+
 .titulo-cabecera{
     font-size: 1rem;
     color: black;
+}
+
+.btn-inicio-sesion-cabecera{
+  width: 130px; 
+  height: 35px; 
+  font-size: 15px;
 }
 
 /* Estilo Generales */
@@ -18,39 +31,94 @@ section{
     align-items: center;
     justify-content: center;
     padding: 15px;
- 
   }
 
   .logo-acueducto{
-    width: 7rem;
+    width: 10rem;
   }
 
   /* Barra de Navegacio */
   .navbar{
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: aqua;
-  }
-  .buscador{
     display: flex;
-   
-    padding: 5px;
-    background-color: blue;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(166, 211, 234);
+  }
+
+  .nav-item{
+    margin-left: 30px;
   }
 
 
+/* Logo Acueducto */
+@media screen and (max-width: 450px){
+  .logo-acueducto{
+    width: 3rem;
+  }
+}
 
+/* Boton Iniciar Sesion */
   @media screen and (max-width: 767px){
-   .btn {
+   .btn-inicio-sesion-cabecera{
     display: none;
    }
   }  
 
+  @media screen and (max-width: 1920px){
+    .btn-inicio-sesion-menu{
+     display: none;
+    }
+   }  
+
+  @media screen and (max-width: 767px){
+    .btn-inicio-sesion-menu{
+     display: flex;
+    }
+   }  
+
+/* Titulo Acueducto */
   @media screen and (max-width: 767px){
     .titulo-cabecera{
         font-size: 0.7rem;
         text-align: center;
     }
   }
+
+  @media screen and (max-width: 450px){
+    .titulo-cabecera{
+      font-size: 0.7rem;
+      
+    }
+  }
+  
+/* Buscador */
+  @media screen and (max-width: 992px){
+    .buscador-cabecera{
+     display: none;
+    }
+   }  
+  
+  @media screen and (max-width: 767px){
+    .buscador-cabecera{
+     display: flex;
+    }
+   }
+   
+  @media screen and (max-width: 450px){
+    .buscador-cabecera{
+      width: 400px;
+      right: 100px;
+      margin-bottom: -35px;
+    }
+  }
+  
+  
+/* Menu de Navegacion */
+@media screen and (max-width: 450px){
+  .btn-inicio-sesion-menu{
+    margin-top: 25px;
+  }
+}
+
   
