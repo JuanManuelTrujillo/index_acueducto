@@ -9,6 +9,10 @@ body{
 .titulo-cabecera{
     font-size: 1rem;
     color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .btn-inicio-sesion-cabecera{
@@ -51,10 +55,12 @@ section{
   }
 
 
+
+
 /* Logo Acueducto */
 @media screen and (max-width: 450px){
   .logo-acueducto{
-    width: 3rem;
+    width: 5rem;
   }
 }
 
@@ -80,8 +86,12 @@ section{
 /* Titulo Acueducto */
   @media screen and (max-width: 767px){
     .titulo-cabecera{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: -20px;
+        margin-right: 10px;
     }
   }
 
@@ -108,7 +118,7 @@ section{
   @media screen and (max-width: 450px){
     .buscador-cabecera{
       width: 400px;
-      right: 100px;
+      right: 200px;
       margin-bottom: -35px;
     }
   }
