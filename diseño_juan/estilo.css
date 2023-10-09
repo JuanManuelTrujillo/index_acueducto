@@ -1,6 +1,7 @@
 /* Cabecera */
 body{
   background-color: #E6EFFD;
+  font-family: "Work Sans",sans-serif,sans-serif;
 }
 .cabecera{
   background-color: white;
@@ -43,6 +44,7 @@ section{
 
   /* Barra de Navegacio */
   .navbar{
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
