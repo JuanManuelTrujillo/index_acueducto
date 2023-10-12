@@ -21,6 +21,7 @@
     font-weight: 600;
     transition: .5s;
     padding: 2px;
+    margin: 10px;
 }
 
 .btn-square {
@@ -70,6 +71,9 @@
 
 .topbar .top-info {
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .topbar .top-link {
@@ -104,12 +108,29 @@
     to {left: 100%;}
 }
 
+@media screen and (width<= 480px) {
+    .text-tobar{
+        font-size: 0.6rem;
+        margin-right: -40px ;
+    }
+    .text-tobar-direct{
+        display: none;
+    }
+    .ico-topbar{
+        display: none;
+    }
+} 
+
 /*** Topbar End ***/
 
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
     padding: 15px 0;
+}
+
+.nav{
+    flex-wrap: wrap;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -145,6 +166,39 @@
     }
 }
 
+@media screen and (max-width: 604px) {
+    .titulo-acued{
+        font-size: 1rem;
+    }
+} 
+
+@media screen and (max-width: 510px) {
+    .titulo-acued{
+        font-size: 0.8rem;
+    }
+    .logo{
+        width: 37px;
+    }
+} 
+
+@media screen and (width <= 414px) {
+    .logo{
+        display: none;
+    }
+    .titulo-acued{
+        font-size: 0.9rem;
+    }
+} 
+
+@media screen and (width >= 1024px) {
+    .logo{
+        width: 70px;
+    }
+    .titulo-acued{
+        font-size: 1.3rem;
+    }
+} 
+
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
@@ -152,19 +206,9 @@
     opacity: 1;
 }
 
-.logo
-{
-    width: 70px;
-    padding: 5px;
-}
-
-.titulo{
-    font-size: 1.3rem;
-    color: rgb(5, 30, 83);
-}
-
 .navegacion{
     background-color: #1361c4;
+    padding: 15px;
 }
 
 .bi-whatsapp{
@@ -173,7 +217,6 @@
 
 .btn-sesion:hover{
     background-color: rgb(76, 230, 150);
-    
     border: none;
 }
 
@@ -376,5 +419,11 @@
 
 .titulo-footer{
     font-size: 2rem;
+}
+
+@media screen and (max-width: 450px){
+    .titulo-footer{
+        font-size: 1.2rem;
+    }
 }
 /*** Footer End ***/
